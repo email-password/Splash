@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5746FE979B7FF80A49C64485 /* Pods_Splash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7241542774058E351D7574EC /* Pods_Splash.framework */; };
 		AD9FA8061ED478BC00FBEE88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9FA8051ED478BC00FBEE88 /* AppDelegate.swift */; };
 		AD9FA8081ED478BC00FBEE88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD9FA8071ED478BC00FBEE88 /* ViewController.swift */; };
 		AD9FA80B1ED478BC00FBEE88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD9FA8091ED478BC00FBEE88 /* Main.storyboard */; };
@@ -15,6 +16,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1B6C421B397890FA28CC93BE /* Pods-Splash.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.debug.xcconfig"; sourceTree = "<group>"; };
+		66B56D0C91DFB2069720C4E6 /* Pods-Splash.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Splash.release.xcconfig"; path = "Pods/Target Support Files/Pods-Splash/Pods-Splash.release.xcconfig"; sourceTree = "<group>"; };
+		7241542774058E351D7574EC /* Pods_Splash.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Splash.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9FA8021ED478BC00FBEE88 /* Splash.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Splash.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD9FA8051ED478BC00FBEE88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		AD9FA8071ED478BC00FBEE88 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -29,17 +33,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5746FE979B7FF80A49C64485 /* Pods_Splash.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		453BE20EDC7D86E1D3A88D17 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1B6C421B397890FA28CC93BE /* Pods-Splash.debug.xcconfig */,
+				66B56D0C91DFB2069720C4E6 /* Pods-Splash.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		AD9FA7F91ED478BC00FBEE88 = {
 			isa = PBXGroup;
 			children = (
 				AD9FA8041ED478BC00FBEE88 /* Splash */,
 				AD9FA8031ED478BC00FBEE88 /* Products */,
+				453BE20EDC7D86E1D3A88D17 /* Pods */,
+				C89DDD3FD3F2D89F37ADDC40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +80,14 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
+		C89DDD3FD3F2D89F37ADDC40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7241542774058E351D7574EC /* Pods_Splash.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +95,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AD9FA8141ED478BC00FBEE88 /* Build configuration list for PBXNativeTarget "Splash" */;
 			buildPhases = (
+				A450EAAA552166AEBF71D91A /* [CP] Check Pods Manifest.lock */,
 				AD9FA7FE1ED478BC00FBEE88 /* Sources */,
 				AD9FA7FF1ED478BC00FBEE88 /* Frameworks */,
 				AD9FA8001ED478BC00FBEE88 /* Resources */,
+				7414FA5852F1C98CFCCCD95F /* [CP] Embed Pods Frameworks */,
+				2B02FD19B5DC7C70203707C0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,6 +158,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2B02FD19B5DC7C70203707C0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Splash/Pods-Splash-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7414FA5852F1C98CFCCCD95F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Splash/Pods-Splash-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A450EAAA552166AEBF71D91A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AD9FA7FE1ED478BC00FBEE88 /* Sources */ = {
@@ -261,6 +336,7 @@
 		};
 		AD9FA8151ED478BC00FBEE88 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B6C421B397890FA28CC93BE /* Pods-Splash.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B22C3P93TG;
@@ -274,6 +350,7 @@
 		};
 		AD9FA8161ED478BC00FBEE88 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B56D0C91DFB2069720C4E6 /* Pods-Splash.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = B22C3P93TG;
