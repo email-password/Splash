@@ -381,6 +381,7 @@
 				AD9FA8161ED478BC00FBEE88 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
